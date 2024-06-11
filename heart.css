@@ -1,0 +1,120 @@
+.block {
+    position: absolute;
+    width: 60px; /* Adjusted for 6 blocks per row in 500px width */
+    height: 20px;
+    background-color: skyblue;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+
+
+#history {
+    margin-left: 89.8%;
+    margin-top: 25%;
+
+
+    z-index: 78768789798;
+}
+
+#continuee {
+    margin-left: 89.8%;
+    margin-top: 35%;
+
+
+    z-index: 78768789798;
+
+}
+
+#restarte {
+    margin-left: 89.8%;
+    margin-top: 45%;
+
+
+    z-index: 78768789798;
+
+}
+
+
+#fpsDisplay {
+    margin-left: 89.8%;
+    margin-top: 55%;
+    z-index: 78768789798;
+    position: absolute;
+    color: #4a4a4a;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    text-align: center;
+    width: 60px; /* Largeur du cadre FPS */
+    height: 30px; /* Hauteur du cadre FPS */
+    line-height: 30px; /* Centrer le texte verticalement */
+    background-color: #07beb8; /* Même couleur de fond que les boutons */
+    border: 2px solid #4a4a4a; /* Même couleur de bordure que les boutons */
+    border-radius: 5px; /* Même arrondi que les boutons */
+}
+
+.button {
+    width: 60px; /* Largeur des boutons */
+    height: 30px; /* Hauteur des boutons */
+    line-height: 30px; /* Centrer le texte verticalement */
+    background-color: #07beb8;
+    color: #4a4a4a;
+    border: 2px solid #4a4a4a;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute; /* Positionnement absolu */
+    transition: background-color 0.3s, color 0.3s; /* Transition sur la couleur de fond et la couleur du texte */
+}
+
+
+.button:hover {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+#timer {
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 0.5%;
+    z-index: 43874879
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99176487387;
+}
+
+#overlayContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+#closeButton {
+    position: absolute;
+    top: 250px;
+    right: 250px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    color: #333;
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 101;
+}

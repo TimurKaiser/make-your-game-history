@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Game - Brick Breaker</title>
+    <link rel="stylesheet" href="arcade-styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="heart.css">
+    <script src="script.js"></script>
+    <!-- <script src="/make-your-game/optionnel/history.js"></script> -->
+</head>
+<body>
+        <div class="arcade-machine">
+            <div class="shadow"></div>
+            <div class="top">
+                <div class="stripes"></div>
+            </div>
+            <div class="screen-container">
+
+                <div class="shadow"></div>
+                <div class="screen">
+
+                    <div class="button" id="history">History</div>
+                    <div class="text1" id="text1"></div>
+                    <div class="text2" id="text2"></div>
+                    <div class="text3" id="text3"></div>
+                    <div class="button" id="continuee">Continue</div>
+                    <div class="button" id="restarte">Restart</div>
+                    <div class="status" id="fpsDisplay"></div>
+                    <div class="timer" id="timer"></div>
+
+
+                    <!-- HISTORY -->
+
+                    <div id="overlay">
+                        <div id="overlayContent">
+                          <button id="closeButton">Close</button>
+                          Au cœur d'un royaume où la magie imprègne chaque pierre, une balle rouge mythique détient le pouvoir ultime, celui de détruire toutes les barrières. Mais l'équilibre est menacé lorsque cette balle, symbole de paix, est dérobée par le sorcier maléfique Morok. Dans un labyrinthe magique, notre héros intrépide se lève, armé de courage et d'une raquette enchantée. Sa quête :  briser les barrières qui enserreraient le royaume dans les ténèbres. Ainsi débute l'épopée de notre héros, prêt à affronter tous les défis pour restaurer la lumière dans le royaume... Attention quand vous passerez la barre des 10000 XP, vos sens s'inverseront.
+                          <!-- Autres éléments de l'overlay -->
+                        </div>
+                    </div>
+                    
+
+                    <!-- MY CODE -->
+                    <div id="board">
+                        <div id="lifeDisplay" class="lifeDisplay"></div>
+                        <div id="player" class="player"></div>
+                        <div id="ball" class="ball"></div>
+                        <div id="status" class="status"></div>
+                        <div id="xpDisplay" class="xpDisplay"></div>
+                    </div>
+
+
+
+                </div>
+                <div class="joystick">
+                    <div class="stick"></div>
+                </div>
+            </div>
+            <div class="board">
+                <div class="button button-a" id="color1"></div>
+                <div class="button button-b" id="color2"></div>
+                <div class="button button-c" id="color3"></div>
+            </div>
+            <div class="bottom">
+                <div class="stripes"></div>
+            </div>
+        </div>
+
+</body>
+</html>
