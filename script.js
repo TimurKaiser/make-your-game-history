@@ -135,7 +135,7 @@ function updateBallPosition() {
 
 
 function movePlayer(event) {
-    if (historyModeHardCore && xp >= 10000) {
+    if (historyModeHardCore && xp >= 1000) {
         if (event.key === "ArrowRight") {
             playerState.x = Math.max(0, playerState.x - playerVelocityX);
             startMove = true;
@@ -282,6 +282,12 @@ function createBlocks() {
 }
 
 
+
+
+let destroyBrick = 0;
+
+
+
 function checkCollisionWithBlocks() {
     for (let i = 0; i < blocks.length; i++) {
         let block = blocks[i];
@@ -296,6 +302,13 @@ function checkCollisionWithBlocks() {
             block.element.remove();
 
             xpGenerator();
+            destroyBrick++
+
+
+
+            if (historyModeHardCore && destroyBrick >= 5) {
+                document.getElementById("end-game-overlay").style.display = "block";
+            }
         }
     }
 }
